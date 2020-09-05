@@ -1,0 +1,71 @@
+//文字
+@mixin font ($size, $lineHight,$weight){
+  font-size: $size;
+  line-height: $lineHight;
+  font-weight: $weight;
+}
+
+//刪除線
+@mixin text-decoration-line-through {
+  text-decoration: line-through;
+}
+// 背景置中
+@mixin bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+// 圖片取代文字
+@mixin over-text {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 圓球
+@mixin ball($size, $color) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background: $color;
+}
+// RWD
+@mixin phone {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+@mixin rwd-376-413 {
+  @media (min-width: 376px) and (max-width: 413px) {
+    @content;
+  }
+}
+
+@mixin phonePlus {
+  @media (min-width: 414px) {
+    @content;
+  }
+}
+
+@mixin rwd-415-767 {
+  @media (min-width: 415px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin rwd-769-995 {
+  @media (min-width: 769px) and (max-width: 995px) {
+    @content;
+  }
+}
+
+@mixin padPro {
+  @media (min-width: 996px) {
+    @content;
+  }
+}

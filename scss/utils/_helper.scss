@@ -1,0 +1,15 @@
+$primary : red;   // 主顏色
+$secondary:orange; // 次要色
+$unimportant:gray; // 不重要
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.middle{
+  display: flex;
+  justify-content: center;
+} 
