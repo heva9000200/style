@@ -5,3 +5,14 @@
 //components
 @import 'components/header';
 @import 'components/footer';
+// 首頁
+@import 'components/index-news';
+@import 'components/index-about';
+@import 'components/index-product';
+// 頁面
+@import 'components/page-news';
+@import 'components/page-about';
+@import 'components/page-product';
+// 內頁
+@import 'components/Inside_page-news';
+@import 'components/Inside_page-product';

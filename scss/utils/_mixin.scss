@@ -1,3 +1,9 @@
+//置中
+@mixin middle{
+  display: flex;
+  justify-content: center;
+}
+
 //文字
 @mixin font ($size, $lineHight,$weight){
   font-size: $size;
@@ -5,10 +11,14 @@
   font-weight: $weight;
 }
 
-//刪除線
-@mixin text-decoration-line-through {
-  text-decoration: line-through;
+//圓弧按鈕
+@mixin ballBtn($size,$txt-color,$color) {
+  padding: $size;
+  color: $txt-color;
+  background: $color;
+  border-radius: 999px;
 }
+
 // 背景置中
 @mixin bg-cover {
   background-size: cover;
@@ -29,6 +39,14 @@
   border-radius: 50%;
   background: $color;
 }
+
+
+//刪除線
+@mixin text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+
 // RWD
 @mixin phone {
   @media (min-width: 375px) {
