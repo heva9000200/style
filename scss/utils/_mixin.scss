@@ -1,8 +1,24 @@
 //置中
+//@include middle;
+
+//文字
+//@include font(16px,22px,400);
+
+//圓弧按鈕
+//@include ballBtn(15px,#FFF,transparent);
+
+//圖片
+//@include img;
+
+//container
+//@include container;
+
+//置中
 @mixin middle{
   display: flex;
   justify-content: center;
 }
+//@include middle;
 
 //文字
 @mixin font ($size, $lineHight,$weight){
@@ -10,6 +26,7 @@
   line-height: $lineHight;
   font-weight: $weight;
 }
+//@include font(16px,22px,400);
 
 //圓弧按鈕
 @mixin ballBtn($size,$txt-color,$color) {
@@ -18,6 +35,26 @@
   background: $color;
   border-radius: 999px;
 }
+//@include font(15px,#FFF,transparent);
+
+
+// 圖片
+@mixin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+//@include img;
+
+// container 
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+//@include container;
+
 
 // 背景置中
 @mixin bg-cover {
@@ -31,6 +68,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
 
 // 圓球
 @mixin ball($size, $color) {
